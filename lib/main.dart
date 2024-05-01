@@ -86,12 +86,11 @@ class _SearchScreenState extends State<SearchScreen> {
                     borderRadius: BorderRadius.circular(10.0),
                     borderSide: BorderSide(color: Colors.blue, width: 2.0),
                   ),
-                  // filled: true,
-                  // fillColor: Colors.grey[200],
+                
                   hintText: 'Search',
                   prefixIcon: Icon(Icons.search),
                   suffixIcon: IconButton(
-                    onPressed: () {
+                  onPressed: () {
                       setAttributesForFaceting("","200");
                       print("object");
                     },
@@ -100,12 +99,7 @@ class _SearchScreenState extends State<SearchScreen> {
                 ),
               ),
             ),
-            // ElevatedButton(
-            //   onPressed: () {
-            //     searchAlgolia(_searchController.text);
-            //   },
-            //   child: Text('Search'),
-            // ),
+            
             Expanded(
               child: ListView.builder(
                 itemCount: searchResults.length,
